@@ -1,0 +1,10 @@
+<h1><%= @restaurant.name %></h1>
+
+<ul>
+  <li>Address: <%= @restaurant.address %></li>
+  <li>Category: <%= @restaurant.category %></li>
+</ul>
+
+<%= link_to 'Edit info', edit_restaurant_path, :class => "btn btn-primary" %>
+<%= link_to 'Leave a review', new_restaurant_review_path(@restaurant) %>
+<%= link_to "Back to restaurants list", restaurants_path, :class => "btn btn-primary" %>
